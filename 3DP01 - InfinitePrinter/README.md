@@ -22,3 +22,16 @@ Our project is to build an infinite printer which is low cost and efficient. Two
 of similar kinds of projects, are used for reference in building our printer. Detailed
 analysis, of all parts of the printer, is done for both the models and the modified
 features are included in our build.
+
+In our Project we are using a Cartesian build which has individual stepper 
+motors controlling 3 degrees of freedom of the printer, 2 for the extruder motion 
+and 1 for conveyor belt. In this build we have 1 stepper motor guiding the 
+motion along inclined Z axis and 1 for motion along X direction and 1 for 
+conveyor belt Y axis.
+
+Each stepper motor is rigidly in contact with Lead screw arrangement, hence 
+both have the same rotary motion. Lead screw converts the rotary motion to 
+linear actuation, so 1 revolution of the motor corresponds to a linear pitch 
+(8mm) in the lead screw. Extruder setup is joined to the lead screw through the Page | 9
+frame. For the Conveyor belt motion 1 stepped motor is directly joined to the 
+axis of the cylinder on which the belt runs, through some ball bearings.
